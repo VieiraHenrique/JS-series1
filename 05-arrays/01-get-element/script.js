@@ -19,4 +19,10 @@
 
     // your code here
 
+    const run = document.getElementById('run');
+
+    run.addEventListener('click', function () {
+        console.log(fruits[3]);
+    })
+
 })();

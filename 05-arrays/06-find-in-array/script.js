@@ -2,8 +2,7 @@
 
 (() => {
 
-    let people = [
-        {
+    let people = [{
             firstname: "Bradford",
             lastname: "Coldbath",
             email: "bcoldbath0@wired.com",
@@ -81,5 +80,16 @@
     ];
 
     // your code here
+
+    const run = document.getElementById('run');
+
+    run.addEventListener('click', () => {
+        for (let i = 0; i < people.length; i++) {
+            if (people[i].firstname.toLowerCase() === 'jean' && people[i].lastname.toLowerCase() === 'dupont') {
+                console.log(people[i].email);
+            }
+        }
+    })
+
 
 })();

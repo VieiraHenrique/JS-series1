@@ -17,4 +17,17 @@
 
     // your code here
 
+    console.log(fruits)
+
+    const run = document.getElementById('run');
+
+    run.addEventListener('click', function () {
+        fruits.shift();
+        fruits.pop();
+        fruits.unshift('banana');
+        fruits.push('kiwi');
+        console.log(fruits);
+
+    })
+
 })();

@@ -20,4 +20,12 @@
 
     // your code here
 
+    const run = document.getElementById('run');
+
+    run.addEventListener('click', function () {
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+    })
+
 })();

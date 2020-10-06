@@ -19,4 +19,14 @@
 
     // your code here
 
+    const run = document.getElementById('run');
+
+    run.addEventListener('click', () => {
+        if (fruits.includes('apple')) {
+            console.log('yes');
+        } else {
+            console.log('no');
+        }
+    })
+
 })();
