@@ -2,10 +2,9 @@
 
 
 const target = document.getElementById('target');
-
 const table = document.createElement('table');
-
 target.appendChild(table);
+
 
 function tableGen(elements) {
     for (let i = 1; i <= elements; i++) {
@@ -22,7 +21,5 @@ function row(columns, factor) {
         table.appendChild(tr)
     }
 }
-
-
 
 tableGen(10);
